@@ -1,0 +1,11 @@
+Thyme-Stamp
+
+HR Software 
+
+class user // id, name, vorname, (gender{he, she , they/them , robot}), brithday -> age, language,  , (anschrift) {CSV foramt}
+class address // country, state, city, Street , Housenumber , Postcode,  {CSV foramt}
+class profile ( Benutzer,)(Anschirft) (timetable9) ??? als , vacationdays,accesslevel ,department,<- reason, class speichern?
+class timetable // ClockIn, ClockOut, Reason , holiday, vacation  {} {csv Format}
+class vacation  // Soll urlaub beantragen bei einem Übersteheneden Benutzer im selben department
+class gender // List of gendertypes / He she It They/Them , Robot etc
+interface reasonable (get/set  reason )

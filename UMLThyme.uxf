@@ -1,0 +1,79 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>461</x><y>424</y><w>360</w><h>510</h></coordinates><panel_attributes>User
+--
+_- NextID : int_ = 1337000000
+- id : int : _final_
+- name : String
+- middle: String
+- sure: String   //Nachname
+- gender : String
+- birthday : Date
+- languages : ArrayList&lt;String&gt;
+- adress : Adress
+- email : String
+--
++ user() //testuser
++ user(all params)
+
++ setSure(String sure, Int accessLevel) : bool 
++ setMiddle(String middle, Int accessLevel) : bool 
++ setName(String name, Int accessLevel) : bool 
++ setGender(String Gender, Int accessLevel) : bool 
++ setBirthday(Date birtthday, Int accessLevel) : bool 
++ setLanguages(String[] languages, Int accessLevel) : bool 
++ setAdress(Adress adress, Int accessLevel) : bool 
++ setEmail(String email, Int accessLevel) : bool 
+
++ getName() : String
++ getMiddle() : String
++ getSure() : String
++ getGender() : String
++ getBirthday() : Date
++ getAge() : int
++ getLanguages() : String[]
++ getAdress(int accessLevel) : Adress
++ getEmail(int accessLevel) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>301</x><y>1044</y><w>400</w><h>400</h></coordinates><panel_attributes>Adress
+--
+- country : String
+- state: String
+- city: String
+- street: String
+- houseNr: int
+- additional : String
+- post: int
+--
++ adress()
++ adress(all params)
+
++ setCountry(String country, int accessLevel) : bool
++ setState(String state, int accessLevel) : bool
++ setCity(String city, int accessLevel) : bool
++ seteStreet(String street, int accessLevel) : bool
++ setHouseNr(int houseNr, String additional , int accessLevel) : bool
++ setPost(int Post, int accessLevel) : bool
+
++ getCountry(int accessLevel) : String
++ getState(int accessLevel) : String
++ getCity(int accessLevel) : String
++ getStreet(int accessLevel) : String
++ getHouseNr(int accessLevel) : int
++ getAdditional(int accessLevel) : String
++ getPost(int accessLevel) : int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>491</x><y>924</y><w>180</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..n
+m2=1</panel_attributes><additional_attributes>140;10;140;70;10;70;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>341</x><y>0</y><w>190</w><h>200</h></coordinates><panel_attributes>Profile
+--
+_- NextID : int_ = 1000000000
+- id : int : _final_
+- user : User
+- timetable : TimeTable
+- vacDays : int
+- sickDays: int
+- accessLevel: int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>421</x><y>190</y><w>240</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;130;220;130;220;230</additional_attributes></element><element><id>UMLClass</id><coordinates><x>61</x><y>410</y><w>240</w><h>110</h></coordinates><panel_attributes>TimeTable
+--
+- clockIn : Timestamp
+- clockOut : Timestamp
+- times : ArrayList&lt;Timestamp&gt;
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>101</x><y>190</y><w>350</w><h>240</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>330;10;330;130;10;130;10;220</additional_attributes></element></diagram>

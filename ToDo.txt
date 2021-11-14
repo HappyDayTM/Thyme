@@ -1,0 +1,8 @@
+Acess Level und Bool return in jede get und set einfügen
+uuml überarbeiten Timetable
+email muss geprüft werden ob "@" und "." vorhaden sind
+differenz von timetable muss von millisekuden iun stunden umgerechnet werden 
+
+Fehlend-> Gehalt, Stunenlohn, steuerId, Steuerklasse,
+
+speicherung der datensätze
